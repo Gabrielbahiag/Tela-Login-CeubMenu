@@ -1,9 +1,9 @@
 import { FaLock, FaSadCry } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { useState } from "react";
-import './Login.css';
+import './Senha.css';
  
- const Login = () => {
+ const Senha = () => {
  
      const [username,setUsername] = useState("");
      const [password,setPassword] = useState("");
@@ -17,7 +17,7 @@ import './Login.css';
    return (
      <div className="container">
          <form onSubmit={handleSubmit}>
-             <h1>Faça seu Login</h1>
+             <h1>Recupere sua Senha</h1>
              <div className="input-field">
                  <input type="email" 
                  placeholder='E-mail' 
@@ -40,7 +40,6 @@ import './Login.css';
                      <input type="checkbox"/>
                      Lembrar de mim?
                  </label>
-                 <a href="#">Esqueceu a Senha?</a>
              </div>
  
              <button className="button">Entrar</button>
@@ -52,4 +51,4 @@ import './Login.css';
      </div>
    )
  }
- export default Login
+ export default Senha
